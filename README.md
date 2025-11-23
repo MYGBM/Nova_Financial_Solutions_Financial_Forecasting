@@ -13,6 +13,7 @@ A comprehensive data science project that analyzes the correlation between finan
 - [Analysis Components](#analysis-components)
 - [Technologies Used](#technologies-used)
 - [Key Findings](#key-findings)
+- [Developer Roadmap](#-developer-roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 - [Authors](#authors)
@@ -295,16 +296,62 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🔮 Future Enhancements
+## 🗺️ Developer Roadmap
 
-Potential areas for future development:
-- Machine learning models to predict price movements from sentiment
-- Real-time sentiment analysis pipeline
-- Correlation analysis between sentiment scores and price changes
-- Advanced technical indicators integration
-- Web scraping for real-time news data
-- API development for sentiment-based trading signals
+### Next Steps: 2-Day Development Sprint 🚀
 
----
+**Timeline:** 2 days  
+**Goal:** Enhance analysis capabilities and establish correlation framework between news sentiment and stock movements
 
-**Note**: This project is for educational and research purposes. Always conduct thorough analysis and consult with financial advisors before making investment decisions.
+#### Day 1: Technical Indicators & Financial Metrics
+
+**1. Apply Analysis Indicators with TA-Lib**
+- [ ] Compute RSI (Relative Strength Index) for all stock symbols
+- [ ] Calculate MACD (Moving Average Convergence Divergence) indicators
+- [ ] Integrate technical indicators as features for price analysis
+- [ ] Validate indicator calculations against historical data
+
+**2. Use PyNance for Financial Metrics**
+- [ ] Integrate PyNance library for advanced financial metrics extraction
+- [ ] Calculate complementary financial metrics to enrich price and sentiment data
+- [ ] Store computed metrics in processed data structure
+
+**3. Visualize the Data**
+- [ ] Create comprehensive visualizations for data distribution analysis
+- [ ] Visualize sentiment impact on stock price movements
+- [ ] Generate charts showing technical indicator behavior relative to stock prices
+- [ ] Develop visualization suite for exploratory data analysis
+
+#### Day 2: Correlation Analysis & Dashboard
+
+**4. Correlation between News and Stock Movement**
+- [ ] **Date Alignment**: Normalize and align news article timestamps with stock price dates
+  - Handle market holidays and non-trading days
+  - Ensure consistent date format across datasets
+- [ ] **Sentiment Analysis Refinement**: Continue refining headline sentiment scores
+  - Leverage Python NLP libraries (nltk, TextBlob)
+  - Improve sentiment classification accuracy
+- [ ] **Calculate Daily Stock Returns**: Compute daily percentage changes in closing prices
+  - Quantify stock performance changes over time
+  - Prepare returns data for correlation analysis
+- [ ] **Correlation Analysis**: Statistically test relationships between daily sentiment scores and stock returns
+  - Calculate correlation coefficients
+  - Identify predictive patterns and significance levels
+  - Analyze lag effects between sentiment and price movements
+
+**5. Dashboard Development**
+- [ ] Build interactive dashboard consolidating:
+  - Sentiment insights and trends
+  - Technical indicators (RSI, MACD)
+  - Stock performance metrics
+  - Correlation visualizations
+- [ ] Enable real-time monitoring capabilities
+- [ ] Support data-driven investment decision-making
+
+**Expected Outcomes:**
+- Enriched stock price data with technical indicators (RSI, MACD)
+- Advanced financial metrics integrated via PyNance
+- Comprehensive visualization suite for data exploration
+- Statistical correlation framework between news sentiment and stock returns
+- Interactive dashboard for monitoring and analysis
+- Foundation for improved financial forecasting accuracy
